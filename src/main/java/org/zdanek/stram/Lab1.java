@@ -1,12 +1,19 @@
 package org.zdanek.stram;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Lab1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		//cw1();
+		
+		filtering();
 
 	}
 
@@ -65,5 +72,29 @@ public class Lab1 {
 		IntStream.rangeClosed(1, 10).forEach(i -> System.out.println(i));
 
 	}
-
+	
+	
+	//Filtering
+	//http://www.baeldung.com/java-8-streams-introduction
+	public static void filtering() {
+		
+		System.out.println("filtering list of strings containing 'd'");
+		
+		ArrayList<String> list = new ArrayList<>();
+		list.add("One");
+		list.add("OneAndOnly");
+		list.add("Derek");
+		list.add("Change");
+		list.add("factory");
+		list.add("justBefore");
+		list.add("Italy");
+		list.add("Italy");
+		list.add("Thursday");
+		list.add("");
+		list.add("");
+		
+		Stream<String> stream = list.stream().filter(element -> element.contains("d"));
+		
+		stream.forEach(i -> System.out.println(i));
+	}
 }
