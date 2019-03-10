@@ -1,4 +1,4 @@
-package org.zdanek.stram;
+package org.zdanek.stream;
 
 import java.util.ArrayList;
 import java.util.Random;
