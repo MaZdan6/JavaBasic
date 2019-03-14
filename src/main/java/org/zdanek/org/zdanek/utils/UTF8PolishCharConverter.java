@@ -1,4 +1,4 @@
-package org.zdanek.javabasic;
+package org.zdanek.org.zdanek.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
