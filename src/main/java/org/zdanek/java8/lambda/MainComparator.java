@@ -15,5 +15,13 @@ public class MainComparator {
         Function<Person, Integer> f1 = p -> p.getAge();
         Function<Person, String> f2 = p -> p.getFirstName();
         Function<Person, String> f3 = p -> p.getLastName();
+        
+        org.zdanek.java8.lambda.Comparator<Person> cmpPersonAge= org.zdanek.java8.lambda.Comparator.comparing(Person::getAge);
+        
+        org.zdanek.java8.lambda.Comparator<Person> cmpPersonLastName= org.zdanek.java8.lambda.Comparator.comparing(Person::getLastName);
+        
+        org.zdanek.java8.lambda.Comparator<Person> cmp= org.zdanek.java8.lambda.Comparator.comparing(Person::getLastName)
+        													.thenCompare(Person::getFirstName)
+        													.thenCompare(Person::getAge);
     }
 }
