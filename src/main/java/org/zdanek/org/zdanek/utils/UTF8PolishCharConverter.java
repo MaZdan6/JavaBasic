@@ -10,7 +10,7 @@ public class UTF8PolishCharConverter {
 
 
     public static void main(String[] args){
-        String input="Organ, na żądanie którego została dokonana Blokada Rachunku, Blokada środków na Rachunku lub organ egzekucyjny, który dokonał Zajęcia wierzytelności z Rachunku.";
+        String input="Jeśli pole 'organ' jest wypełnione, to pole 'rodzajStir' też musi być wypełnione.";
         System.out.println(input);
         String output= convertPolishCharsToUTF8(input);
 
