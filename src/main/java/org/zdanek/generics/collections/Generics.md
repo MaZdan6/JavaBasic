@@ -24,6 +24,7 @@ public static <T> T min(List<T> values, Comparator<T> comparator)
 ```
 
 ### Wildcard
+https://www.geeksforgeeks.org/wildcards-in-java/
 
 #### Upper Bounded 
 	List<? extends Cls>

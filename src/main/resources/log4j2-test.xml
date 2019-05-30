@@ -6,12 +6,10 @@
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 	</Appenders>
-	<Additivity>false</Additivity>
 	<Loggers>
-		<Logger name="org.zdanek" level="trace">
+		<Logger name="org.zdanek" level="trace" additivity="false">
 			<AppenderRef ref="Console" />
 		</Logger>
-		<!-- <Additivity name="org.zdanek">false</Additivity> -->
 		<Root level="error">
 			<AppenderRef ref="Console" />
 		</Root>
