@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Additivity>false</Additivity>
+	<Loggers>
+		<Logger name="org.zdanek" level="trace">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<!-- <Additivity name="org.zdanek">false</Additivity> -->
+		<Root level="error">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>
